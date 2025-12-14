@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,123 @@
     <link rel="stylesheet" href="Css/style.css">
     <title>Cidade Viva</title>
 </head>
+
 <body>
-    
+    <!--Cabeçalho principal-->
+    <header>
+        <h1>Cidade Viva</h1>
+        <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Noticias</a>
+            <a href="#">Eventos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!--Secção com foto-->
+
+    <section class="foto_1">
+        <h1>Cidade Viva</h1>
+        <p>Conheça nossa cidade e descubra tudo o que ela tem a oferecer</p>
+    </section>
+
+
+    <!--Secção sobre cidade-->
+
+    <section class="sobre">
+        <h1>Sobre a cidade</h1>
+        <h2>Nova estrada é inagurada</h2>
+        <img src="imagens/foto2.jpg" alt="estrada" width="100" height="100">
+        <p>A nova estrada foi inagurada no dia 13 de Abril de 2024, pelo nosso presidente.</p>
+        <h2>Festival de musica atrai visitantes</h2>
+        <img src="imagens/foto3.jpg" alt="festival" width="100" height="100">
+    </section>
+
+    <!--Conteúdo idenpedente, noticias-->
+
+    <article class="noticia">
+        <img src="imagens/foto4.jpg" alt="Imagem da biblioteca" width="500" height="500">
+        <div class="conteudo-noticia">
+            <h3>Biblioteca municipal amplia horário de funcionamento</h3>
+            <span class="data">18 de Abril, 2024</span>
+            <p>
+                A biblioteca municipal passa a funcionar até mais tarde durante a semana,
+                oferecendo mais acesso ao estudo, leitura e actividades educativas para a
+                comunidade.
+            </p>
+        </div>
+    </article>
+
+    <!-- Secção de eventos-->
+
+    <section class="eventos">
+        <div class="feira">
+            <h3>Feira de agricultura</h3>
+            <p>Praça central</p>
+            <p>20 de Abril de 2024</p>
+            <p>10:00</p>
+        </div>
+        <div class="exposição">
+            <h3>Exposição de arte</h3>
+            <p>Arte moderna</p>
+            <p>23 de Abril 2024</p>
+            <p>18:00</p>
+        </div>
+        <div class="concerto">
+            <h3>Concerto de Jazz</h3>
+            <p>Teatro Municipal</p>
+            <p>30 de Abril 2024</p>
+            <p>20:00</p>
+        </div>
+    </section>
+
+    <!--Galeria-->
+    <section class="galeria">
+        <h1>Galeria</h1>
+        <figure>
+            <img src="imagens/foto7.jpg" alt="cidade" width="300" height="300">
+            <figcaption>O ritmo da cidade nunca dorme: prédios, histórias e sonhos em constante movimento.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagens/foto6.jpg" alt="pessoas na cidade" width="300" height="300">
+            <figcaption>Entre passos apressados e conversas leves, a cidade também é feita de encontros.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="imagens/foto5.jpg" alt="cidade" width="300" height="300">
+            <figcaption>Quando o sol se despede, a cidade ganha novas cores e outro significado.</figcaption>
+        </figure>
+
+    </section>
+    <section class="depoimentos">
+      <aside>
+        <blockquote>A cidade é maravilhosa, linda de mais. Espero passar por aqui mais vezes</blockquote>
+        <cite>Maria Santos, professora</cite>
+        <hr>
+        <blockquote>A Minha esposa e os meus filhos gostaram de estar nessa cidade, a comida é muito boa.</blockquote>
+        <cite>Luís Henrique, empresário</cite>
+      </aside>
+    </section>
+    <section class="contacto">
+        <form>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <br>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br>
+                <label for="mensagem"></label>
+                <input type="text" id="mensagem" name="mensagem" placeholder="mensagem">
+                <br>
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" rows="5" cols="40" placeholder="Escreva aqui"></textarea>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
+
 </html>
