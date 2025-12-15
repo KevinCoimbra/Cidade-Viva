@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* foto */
+.foto {
+    background: url("../imagens/foto1.jpg") no-repeat center/cover;
+    padding: 100px 60px;
+    color: #faebd7;
+    
+}
+
+/* Sobre */
+.sobre {
+    padding: 60px;
+}
+
+.sobre-item {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sobre img {
+    width: 120px;
+}
+
+/* Notícia */
+.noticia {
+    display: flex;
+    gap: 30px;
+    padding: 60px;
+    background: #f5f5f5;
+}
+
+.noticia img {
+    width: 300px;
+}
+
+/* Eventos */
+.eventos {
+    padding: 60px;
+}
+
+.eventos-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.eventos-grid div {
+    background: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Galeria */
+.galeria {
+    padding: 60px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+/* Depoimentos */
+.depoimentos {
+    padding: 60px;
+    background: #f9f9f9;
+}
+
+.depoimentos blockquote {
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 60px;
+}
+
+.contacto form {
+    max-width: 400px;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contacto button {
+    padding: 10px;
+    background: #2b6cb0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/*Responsividade*/
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 30px;
+    }
+
+    .foto {
+        padding: 80px 30px;
+        text-align: center;
+    }
+
+    .sobre,
+    .noticia,
+    .eventos,
+    .galeria,
+    .depoimentos,
+    .contacto {
+        padding: 40px 30px;
+    }
+
+    .sobre-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre img {
+        width: 180px;
+    }
+
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        width: 100%;
+    }
+
+    .eventos-grid {
+        flex-direction: column;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telefones */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .foto {
+        padding: 60px 20px;
+    }
+
+    .foto h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre,
+    .noticia,
+    .eventos,
+    .galeria,
+    .depoimentos,
+    .contacto {
+        padding: 30px 20px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto form {
+        max-width: 100%;
+    }
+}

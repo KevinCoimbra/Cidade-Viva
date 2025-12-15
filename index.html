@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,121 +11,132 @@
 </head>
 
 <body>
-    <!--Cabeçalho principal-->
-    <header>
-        <h1>Cidade Viva</h1>
-        <nav>
-            <a href="#">Sobre</a>
-            <a href="#">Noticias</a>
-            <a href="#">Eventos</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+<!--Cabeçalho Principal-->
+<header>
+    <h1>Cidade Viva</h1>
+    <nav>
+        <a href="#city">Sobre</a>
+        <a href="#novidades">Notícias</a>
+        <a href="#encontros">Eventos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#fale">Contacto</a>
+    </nav>
+</header>
 
-    <!--Secção com foto-->
+<!-- seccao da foto -->
+<section class="foto">
+    <h2>Cidade viva</h2>
+    <p>Conheça nossa cidade e descubra tudo o que ela tem a oferecer</p>
+</section>
 
-    <section class="foto_1">
-        <h1>Cidade Viva</h1>
-        <p>Conheça nossa cidade e descubra tudo o que ela tem a oferecer</p>
-    </section>
+<!-- Sobre -->
+<section class="sobre" id="city">
+    <h2>Sobre a cidade</h2>
 
-
-    <!--Secção sobre cidade-->
-
-    <section class="sobre">
-        <h1>Sobre a cidade</h1>
-        <h2>Nova estrada é inagurada</h2>
-        <img src="imagens/foto2.jpg" alt="estrada" width="100" height="100">
-        <p>A nova estrada foi inagurada no dia 13 de Abril de 2024, pelo nosso presidente.</p>
-        <h2>Festival de musica atrai visitantes</h2>
-        <img src="imagens/foto3.jpg" alt="festival" width="100" height="100">
-    </section>
-
-    <!--Conteúdo idenpedente, noticias-->
-
-    <article class="noticia">
-        <img src="imagens/foto4.jpg" alt="Imagem da biblioteca" width="500" height="500">
-        <div class="conteudo-noticia">
-            <h3>Biblioteca municipal amplia horário de funcionamento</h3>
-            <span class="data">18 de Abril, 2024</span>
-            <p>
-                A biblioteca municipal passa a funcionar até mais tarde durante a semana,
-                oferecendo mais acesso ao estudo, leitura e actividades educativas para a
-                comunidade.
-            </p>
+    <div class="sobre-item">
+        <img src="imagens/foto2.jpg" alt="Estrada">
+        <div>
+            <h3>Nova estrada é inaugurada</h3>
+            <p>A nova estrada foi inaugurada no dia 13 de Abril de 2024.</p>
         </div>
-    </article>
+    </div>
 
-    <!-- Secção de eventos-->
+    <div class="sobre-item">
+        <img src="imagens/foto3.jpg" alt="Festival">
+        <div>
+            <h3>Festival de música atrai visitantes</h3>
+            <p>O evento trouxe turistas e movimentou a economia local.</p>
+        </div>
+    </div>
+</section>
 
-    <section class="eventos">
-        <div class="feira">
-            <h3>Feira de agricultura</h3>
-            <p>Praça central</p>
-            <p>20 de Abril de 2024</p>
+<!-- Notícia -->
+<article class="noticia" id="novidades">
+    <img src="imagens/foto4.jpg" alt="Biblioteca">
+    <div>
+        <h3>Biblioteca municipal amplia horário</h3>
+        <span>18 de Abril, 2024</span>
+        <p>
+            A biblioteca passa a funcionar até mais tarde,
+            oferecendo mais acesso à leitura e estudo.
+        </p>
+    </div>
+</article>
+
+<!-- Eventos -->
+<section class="eventos" id="encontros">
+    <h2>Eventos</h2>
+
+    <div class="eventos-grid">
+        <div>
+            <h3>Feira da Agricultura</h3>
+            <p>Praça Central</p>
+            <p>20 de Abril 2024</p>
             <p>10:00</p>
         </div>
-        <div class="exposição">
-            <h3>Exposição de arte</h3>
-            <p>Arte moderna</p>
+
+        <div>
+            <h3>Exposição de Arte</h3>
+            <p>Arte Moderna</p>
             <p>23 de Abril 2024</p>
             <p>18:00</p>
         </div>
-        <div class="concerto">
+
+        <div>
             <h3>Concerto de Jazz</h3>
             <p>Teatro Municipal</p>
             <p>30 de Abril 2024</p>
             <p>20:00</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--Galeria-->
-    <section class="galeria">
-        <h1>Galeria</h1>
+<!-- Galeria -->
+<section class="galeria" id="galeria">
+    <h2>Galeria</h2>
+
+    <div class="galeria-grid">
         <figure>
-            <img src="imagens/foto7.jpg" alt="cidade" width="300" height="300">
-            <figcaption>O ritmo da cidade nunca dorme: prédios, histórias e sonhos em constante movimento.</figcaption>
+            <img src="imagens/foto7.jpg" alt="Cidade">
+            <figcaption>O ritmo da cidade nunca dorme.</figcaption>
         </figure>
 
         <figure>
-            <img src="imagens/foto6.jpg" alt="pessoas na cidade" width="300" height="300">
-            <figcaption>Entre passos apressados e conversas leves, a cidade também é feita de encontros.</figcaption>
+            <img src="imagens/foto6.jpg" alt="Pessoas">
+            <figcaption>A cidade também é feita de encontros.</figcaption>
         </figure>
 
         <figure>
-            <img src="imagens/foto5.jpg" alt="cidade" width="300" height="300">
-            <figcaption>Quando o sol se despede, a cidade ganha novas cores e outro significado.</figcaption>
+            <img src="imagens/foto5.jpg" alt="Noite">
+            <figcaption>Quando o sol se despede, novas cores surgem.</figcaption>
         </figure>
+    </div>
+</section>
 
-    </section>
-    <section class="depoimentos">
-      <aside>
-        <blockquote>A cidade é maravilhosa, linda de mais. Espero passar por aqui mais vezes</blockquote>
-        <cite>Maria Santos, professora</cite>
-        <hr>
-        <blockquote>A Minha esposa e os meus filhos gostaram de estar nessa cidade, a comida é muito boa.</blockquote>
-        <cite>Luís Henrique, empresário</cite>
-      </aside>
-    </section>
-    <section class="contacto">
-        <form>
-            <fieldset>
-                <legend>Contacto</legend>
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Nome" required>
-                <br>
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <br>
-                <label for="mensagem"></label>
-                <input type="text" id="mensagem" name="mensagem" placeholder="mensagem">
-                <br>
-                <label for="mensagem"></label>
-                <textarea name="mensagem" id="mensagem" rows="5" cols="40" placeholder="Escreva aqui"></textarea>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </section>
+<!-- Depoimentos -->
+<section class="depoimentos">
+    <blockquote>
+        A cidade é maravilhosa, linda demais.
+        <cite>— Maria Santos, Professora</cite>
+    </blockquote>
+
+    <blockquote>
+        Minha família adorou a cidade e a comida.
+        <cite>— Luís Henrique, Empresário</cite>
+    </blockquote>
+</section>
+
+<!-- Contacto -->
+<section class="contacto" id="fale">
+    <h2>Contacto</h2>
+
+    <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
 </body>
-
 </html>
